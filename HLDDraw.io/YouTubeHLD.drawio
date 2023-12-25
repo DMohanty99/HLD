@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-25T21:07:49.984Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="SHGVxCAKvgO6FuUeHQNf" version="22.1.9" type="github" pages="21">
+<mxfile host="app.diagrams.net" modified="2023-12-25T21:29:14.860Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="Oq131RzvB3ZkxnqgFfXY" version="22.1.9" type="github" pages="22">
   <diagram name="Youtube Initial design" id="feK6UR_0gXUUhqBv7dY3">
     <mxGraphModel dx="1762" dy="388" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -4879,7 +4879,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xy9dAh41rpqvIKgWrKvc" name="codeKarleTinyURLHLD">
-    <mxGraphModel dx="1308" dy="915" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1081" dy="786" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5016,6 +5016,46 @@
         </mxCell>
         <mxCell id="3hPrgrJWAoJ5C3fi8hIl-41" value="instead of sending each entry to the kafka, the entries could be collated internally before sending over to the kafka . the entries could be collated internally . the problem is that if we push event into kafka asyncronously then we might end up losing the collated data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="280" y="1036" width="403" height="143" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PRNtBZYWpSughmS2a-JJ" name="db choice ">
+    <mxGraphModel dx="1081" dy="386" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-1" value="factor affecting choice of data bases" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-131" y="97" width="358" height="120" as="geometry">
+            <mxRectangle x="54" y="159" width="60" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-2" value="structured or unstructured data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="CckQZ5J16rqyGoVkN1Ij-1">
+          <mxGeometry y="30" width="358" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-3" value="query pattern" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="CckQZ5J16rqyGoVkN1Ij-1">
+          <mxGeometry y="60" width="358" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-4" value="scale of operation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="CckQZ5J16rqyGoVkN1Ij-1">
+          <mxGeometry y="90" width="358" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-5" value="caching :- if we dont want to call db/rpc every time&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-81" y="231" width="191" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-6" value="images/videos -&lt;br&gt;S3 (blob file storage),CDN" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-102" y="314" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-7" value="text searching/fuzzy search capabilities- elastic search or sola(text search engine)/apache lucene. they are not dbs so data might be lost. they cannot b used as ground truth." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="59" y="307" width="303" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-8" value="time series database-openTSDB&lt;br&gt;the data written is sequential and query pattern is bulk query over a period of time. used in grafanna" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="433" width="287" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-9" value="data warehouse- hadoop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190" y="443" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CckQZ5J16rqyGoVkN1Ij-10" value="relational data + acid guarentees required - relational db sql&lt;br&gt;wide variety of data + complex queries :- document data&lt;br&gt;ever increasing data + finite no of queries:- cassandra columnar db" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-276" y="544" width="492" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
