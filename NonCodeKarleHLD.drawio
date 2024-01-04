@@ -1,9 +1,119 @@
-<mxfile host="app.diagrams.net" modified="2024-01-03T19:05:45.886Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" version="22.1.16" etag="BmFp0kUcLZf3rTepXcpp" type="github">
-  <diagram name="Page-1" id="RvPfylnCXQCkqupR7em6">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" modified="2024-01-04T20:03:25.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="UxIY-FkR53UHE7ejvJlx" version="22.1.16" type="github">
+  <diagram name="Distributed Message Queue" id="RvPfylnCXQCkqupR7em6">
+    <mxGraphModel dx="3805" dy="2490" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="rq72XXHcKqSahEBaoDvN-1" value="Distributed Message Queue&lt;br&gt;Functional Requirements:-&lt;br&gt;1) Insert(queue)&lt;br&gt;2) pull (queue)&lt;br&gt;&lt;br&gt;Non Functional Requirement:-&lt;br&gt;1) Scalability&lt;br&gt;2) Availability&lt;br&gt;3)latency&lt;br&gt;4) Durability" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="31" y="197" width="227" height="229" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-2" value="pull vs push:-&lt;br&gt;push:- producer pushes its message on to the customer whenever the message is ready to be sent. &lt;br&gt;1)here the consumer can be over whelmed by the number of requests. &lt;br&gt;2)also the response can be delayed as compared to pull approach&lt;br&gt;&lt;br&gt;pull:-&lt;br&gt;the messages are sent to an interim queue and from there the message is pulled by the consumer whenever the consumer is ready to take the messages&lt;br&gt;messages can be stored in a queue&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="555" width="746" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-3" value="consumer&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="289" y="466" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-5" target="rq72XXHcKqSahEBaoDvN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-5" value="Producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-61" y="466" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-7" value="Synchronous messages" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="55" y="462" width="189" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-9" target="rq72XXHcKqSahEBaoDvN-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-9" value="producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="876" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-10" value="queue" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="111" y="873" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-10" target="rq72XXHcKqSahEBaoDvN-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="908" as="targetPoint" />
+            <mxPoint x="236" y="908" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-13" value="consumer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="297" y="876" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-15" value="pull approach" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="106" y="956" width="147" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-16" target="rq72XXHcKqSahEBaoDvN-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-16" value="VIP&lt;br&gt;(Virtual IP (DNS spins this IP))" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-271" y="1371" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-20" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-17" target="rq72XXHcKqSahEBaoDvN-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-17" value="LB" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-69" y="1371" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-19" target="rq72XXHcKqSahEBaoDvN-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-19" target="rq72XXHcKqSahEBaoDvN-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-19" value="FrontEnd Service&lt;br&gt;(initial request processing) (stateless)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="171" y="1359" width="144" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-21" value="1)Request Validation&lt;br&gt;2)Authorization and authentication&lt;br&gt;3)deduplication(at max once delivery policy)&lt;br&gt;4)SSL Termination&lt;br&gt;5)Server Side Encryption&lt;br&gt;6)Throttling(Rate Limiting)&lt;br&gt;7)Request dispatching (bulkhead and circuit breaker design pattern)&lt;br&gt;8) caching&lt;br&gt;9) User data creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="34" y="1444" width="397" height="198" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-22" value="Metadata Service&lt;br&gt;(provides data about which queue is stored in which cluster and other queue related data like creation date, name owner ,etc)&lt;br&gt;cache is maintained in memory" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="93" y="1215" width="276" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-24" value="database" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="154" y="1120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.65;entryY=0.978;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-22" target="rq72XXHcKqSahEBaoDvN-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-26" value="Backend Service&lt;br&gt;(this is where the data will be stored)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="411" y="1371" width="272" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-28" value="many reads less writes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="388" y="1193" width="120" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-29" value="there can be three ways of creating the cache cluster:-&lt;br&gt;1) if the data is less then multiple machines can be created in the cluester which store the exact same data. frontend service can then call any one of the machines in the cluster&lt;br&gt;2) if the dtata is big then we can think of sharding the data mong different machines and can use consistent hashing for the purpose.frontend service can call the requireed instance based on the hash created&lt;br&gt;3) we can have the sharding but this time the hashing and instance determination can happen at each instance.level . the frontend service can send the data to any one of the instences and the instance can send the data to the right instance&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="397" y="1240" width="1424" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-30" value="there would be mulitiple instances of the load balancers , vips and the front end service ...each at a different data center to ensure availablity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-204" y="1472" width="263" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-31" value="db vs cache vs in memory store in distributed machines:-&lt;br&gt;in order to handle very large traffic of data wherein the data is consumed from one end and it is written into one end and the direction of write is only one, we could store the data in host disks (using file system for old messages) and in their memory as well (for recent messages ). this will help us scale while maintaining low latency.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="543" y="1516" width="719" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-32" value="we will have several leaders and followers . each follower will in sync read from the leader.&lt;br&gt;we would require a service that would maintain the list of leader (corresponding queues) and their followers. it will work similar to a zoo keeper. for each queue there will be an offset for a consumer which will denote the message read by the customer . we will remove the offset values periodically from the queues. there are two types of zoo keppers based on the type of cluster management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="545" y="1643" width="622" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-33" value="In cluster manager\ zookeeper&lt;br&gt;1) all the hosts are in a single cluster&amp;nbsp;&lt;br&gt;2) leaders and followers are assigned to hosts in the cluster&lt;br&gt;3) here the zoo keeper has to maintain the list of each host and its data for targeted data routing.&lt;br&gt;4) health check for each host.&lt;br&gt;5) leader election if any of the host dies or queue leader division for scalability(partitioning)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="422" y="1849" width="312" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-34" value="Out cluster manager\ zookeeper&lt;br&gt;1) several clusters each with 2 to 3 hosts&lt;br&gt;2) no leaders and data replication happens throughout the cluster from any node&lt;br&gt;3) here the zoo keeper has to maintain the list of each cluster and its data for targeted data routing. the hosts will share the data among themselves&lt;br&gt;4) health check for each cluster or overheated cluster&lt;br&gt;5)&amp;nbsp; queue is assigned to multiple clusters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="812" y="1840" width="312" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-35" value="other Important Points:-&lt;br&gt;1) Queue creation and deletion:- queue can be created via API and deleted via api but delete api needs to be protected from unintended use(like not make it available on GUI and only via console)&lt;br&gt;2) Message deletion :- messages can be stored with offset and can be cleared in regular intervals(implemented in kafka)&lt;br&gt;messages are stored with offset but deleting the messages has to be done by consumers explicitly else the messages will be shown again (amazon sqs)&lt;br&gt;3) replication:- synchronous replication - producer is responded after the data is replicated -&lt;br&gt;more available but slow&lt;br&gt;asynchronous replication:- replication happens after response - fast but not durable&lt;br&gt;4) push vs pull :- in Pull the consumer / backend regularly polls the message queue for new messages whereas in push the queue send update to the consumer when a new message comes. pull is simpler to implement for message queue but is more work from the consumer side.&lt;br&gt;5) message delivery semantics :- atleast once / atmost once /exactly once.&lt;br&gt;we need the3 other two because exactly once is very difficult to achieve . most of the distrbuted queues implement atleast once as it gives balance of availablity and performance.&lt;br&gt;6) FIFO -100% is not possible in distributed queues. else latency will be affected.&lt;br&gt;6)security:- ssl / http encryption and server side encryption&lt;br&gt;7) monitoring :- alert / dashboard for all services and provide info to consumers about their specific queues&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2212" width="713" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-36" value="Source - system Design Interview /&lt;br&gt;exponent youtube channel" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="138" y="-294" width="620" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="rq72XXHcKqSahEBaoDvN-37" value="VIP partitioning&amp;nbsp;&lt;br&gt;and LB replication help achieve scalability and availability at load balancer layer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-178" y="1591" width="196" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
