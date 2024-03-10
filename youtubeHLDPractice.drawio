@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-10T18:16:33.304Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="fNTNKu7uUuplaqPxO4u-" version="23.1.6" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-03-10T18:21:02.794Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="YXddNx5ooxvS0eI8bCti" version="23.1.6" type="github" pages="6">
   <diagram name="youtube" id="2cJXwp5oWL4Eqhn22xIr">
     <mxGraphModel dx="1257" dy="987" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1474,7 +1474,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2tlPwxCDKmrDnMIuHOrt" name="amazon">
-    <mxGraphModel dx="5176" dy="2632" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1727" dy="1020" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1599,11 +1599,6 @@
         </mxCell>
         <mxCell id="ga4cwbtqyf1TwynWVp3Q-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-26" target="ga4cwbtqyf1TwynWVp3Q-84">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-26" target="ga4cwbtqyf1TwynWVp3Q-108">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="845.5882352941176" y="654.5882352941178" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="ga4cwbtqyf1TwynWVp3Q-26" value="kafka" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="646" y="545" width="109" height="438" as="geometry" />
@@ -1795,37 +1790,11 @@
         <mxCell id="ga4cwbtqyf1TwynWVp3Q-101" value="redis(TTL)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="226" y="1046" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-38" target="ga4cwbtqyf1TwynWVp3Q-104">
+        <mxCell id="ga4cwbtqyf1TwynWVp3Q-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-38" target="ga4cwbtqyf1TwynWVp3Q-53">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="244.41176470588243" y="893.4117647058824" as="targetPoint" />
+            <mxPoint x="385" y="977" as="targetPoint" />
             <mxPoint x="191" y="953" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-104" value="sql" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="385" y="947" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-110" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-108" target="ga4cwbtqyf1TwynWVp3Q-109">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-108" target="ga4cwbtqyf1TwynWVp3Q-112">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="996.1764705882356" y="515.7647058823529" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-108" value="order archival service" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="829.4982352941175" y="624.5882352941178" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-109" value="cassandra" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1036" y="669" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-114" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ga4cwbtqyf1TwynWVp3Q-112" target="ga4cwbtqyf1TwynWVp3Q-113">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-112" value="LB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="497" width="28" height="72" as="geometry" />
-        </mxCell>
-        <mxCell id="ga4cwbtqyf1TwynWVp3Q-113" value="order history service" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1092" y="503" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
