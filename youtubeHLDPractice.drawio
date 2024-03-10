@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-10T20:21:18.745Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="mJSfp9mZGDqspKBM5tff" version="23.1.6" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-03-10T20:23:45.223Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="v7rGdmWn8glRc0q1CEwv" version="23.1.6" type="github" pages="7">
   <diagram name="youtube" id="2cJXwp5oWL4Eqhn22xIr">
     <mxGraphModel dx="1257" dy="987" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1800,7 +1800,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LHHyZKxfTz7y4yzzP7Sj" name="Zoom">
-    <mxGraphModel dx="2293" dy="1098" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2057" dy="987" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1924,34 +1924,16 @@
         <mxCell id="VL_SOLXqF2Z4y-honCXp-37" value="live content uploader" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-414" y="1871" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-38" target="VL_SOLXqF2Z4y-honCXp-41">
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-38" target="VL_SOLXqF2Z4y-honCXp-65">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-4.368421052631675" y="1804.5789473684213" as="targetPoint" />
+            <mxPoint x="8" y="1906" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VL_SOLXqF2Z4y-honCXp-38" value="TURN Server" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-214" y="1871" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-41" target="VL_SOLXqF2Z4y-honCXp-42">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-41" value="Geographic TURN Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-64.36842105263167" y="1774.5789473684213" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-42" target="VL_SOLXqF2Z4y-honCXp-44">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-42" value="Device Specific TURN server" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="135.63157894736833" y="1774.5789473684213" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-44" target="VL_SOLXqF2Z4y-honCXp-46">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="VL_SOLXqF2Z4y-honCXp-44" value="One more TURN Server" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="335.6315789473683" y="1774.5789473684213" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="VL_SOLXqF2Z4y-honCXp-46" value="User devices&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="517" y="1738" width="120" height="60" as="geometry" />
+          <mxGeometry x="597" y="1878" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VL_SOLXqF2Z4y-honCXp-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-50">
           <mxGeometry relative="1" as="geometry">
@@ -2000,6 +1982,24 @@
         </mxCell>
         <mxCell id="VL_SOLXqF2Z4y-honCXp-63" value="Notification service" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1057" y="957" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-65" target="VL_SOLXqF2Z4y-honCXp-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-65" value="Transcoder" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1" y="1878" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-66" target="VL_SOLXqF2Z4y-honCXp-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-66" value="Turn server" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="201" y="1878" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VL_SOLXqF2Z4y-honCXp-68" target="VL_SOLXqF2Z4y-honCXp-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VL_SOLXqF2Z4y-honCXp-68" value="Geographically distributed TURN servers(as close to users as possible)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1878" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
