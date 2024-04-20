@@ -1,133 +1,136 @@
-<mxfile host="app.diagrams.net" modified="2024-01-07T22:40:48.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="aGUSk014VXvZKiHjljPj" version="22.1.16" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-04-20T19:06:38.182Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="6qOwTp1ZYanF0JHZwgKE" version="24.2.7" type="github" pages="4">
   <diagram name="Distributed Message Queue" id="RvPfylnCXQCkqupR7em6">
-    <mxGraphModel dx="1201" dy="854" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1672" dy="1141" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="rq72XXHcKqSahEBaoDvN-1" value="Distributed Message Queue&lt;br&gt;Functional Requirements:-&lt;br&gt;1) Insert(queue)&lt;br&gt;2) pull (queue)&lt;br&gt;&lt;br&gt;Non Functional Requirement:-&lt;br&gt;1) Scalability&lt;br&gt;2) Availability&lt;br&gt;3)latency&lt;br&gt;4) Durability" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-1" value="Distributed Message Queue&lt;br&gt;Functional Requirements:-&lt;br&gt;1) Insert(queue)&lt;br&gt;2) pull (queue)&lt;br&gt;&lt;br&gt;Non Functional Requirement:-&lt;br&gt;1) Scalability&lt;br&gt;2) Availability&lt;br&gt;3)latency&lt;br&gt;4) Durability" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="31" y="197" width="227" height="229" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-2" value="pull vs push:-&lt;br&gt;push:- producer pushes its message on to the customer whenever the message is ready to be sent. &lt;br&gt;1)here the consumer can be over whelmed by the number of requests. &lt;br&gt;2)also the response can be delayed as compared to pull approach&lt;br&gt;&lt;br&gt;pull:-&lt;br&gt;the messages are sent to an interim queue and from there the message is pulled by the consumer whenever the consumer is ready to take the messages&lt;br&gt;messages can be stored in a queue&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-2" value="pull vs push:-&lt;br&gt;push:- producer pushes its message on to the customer whenever the message is ready to be sent. &lt;br&gt;1)here the consumer can be over whelmed by the number of requests. &lt;br&gt;2)also the response can be delayed as compared to pull approach&lt;br&gt;&lt;br&gt;pull:-&lt;br&gt;the messages are sent to an interim queue and from there the message is pulled by the consumer whenever the consumer is ready to take the messages&lt;br&gt;messages can be stored in a queue&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-190" y="555" width="746" height="216" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-3" value="consumer&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-3" value="consumer&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="289" y="466" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-5" target="rq72XXHcKqSahEBaoDvN-3">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-5" target="rq72XXHcKqSahEBaoDvN-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-5" value="Producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-5" value="Producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-61" y="466" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-7" value="Synchronous messages" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-7" value="Synchronous messages" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="55" y="462" width="189" height="31" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-9" target="rq72XXHcKqSahEBaoDvN-10">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-9" target="rq72XXHcKqSahEBaoDvN-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-9" value="producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-9" value="producer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-75" y="876" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-13">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="343" y="908" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-10" value="queue" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-10" value="queue" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="111" y="873" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-10" target="rq72XXHcKqSahEBaoDvN-13">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-10" target="rq72XXHcKqSahEBaoDvN-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="343" y="908" as="targetPoint" />
             <mxPoint x="236" y="908" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-13" value="consumer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-13" value="consumer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="297" y="876" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-15" value="pull approach" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-15" value="pull approach" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="106" y="956" width="147" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-16" target="rq72XXHcKqSahEBaoDvN-17">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-16" target="rq72XXHcKqSahEBaoDvN-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-16" value="VIP&lt;br&gt;(Virtual IP (DNS spins this IP))" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-16" value="VIP&lt;br&gt;(Virtual IP (DNS spins this IP))" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-271" y="1371" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-20" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-17" target="rq72XXHcKqSahEBaoDvN-19">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-20" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-17" target="rq72XXHcKqSahEBaoDvN-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-17" value="LB" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-17" value="LB" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-69" y="1371" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-19" target="rq72XXHcKqSahEBaoDvN-22">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-19" target="rq72XXHcKqSahEBaoDvN-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-19" target="rq72XXHcKqSahEBaoDvN-26">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-19" target="rq72XXHcKqSahEBaoDvN-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-19" value="FrontEnd Service&lt;br&gt;(initial request processing) (stateless)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-19" value="FrontEnd Service&lt;br&gt;(initial request processing) (stateless)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="171" y="1359" width="144" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-21" value="1)Request Validation&lt;br&gt;2)Authorization and authentication&lt;br&gt;3)deduplication(at max once delivery policy)&lt;br&gt;4)SSL Termination&lt;br&gt;5)Server Side Encryption&lt;br&gt;6)Throttling(Rate Limiting)&lt;br&gt;7)Request dispatching (bulkhead and circuit breaker design pattern)&lt;br&gt;8) caching&lt;br&gt;9) User data creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-21" value="1)Request Validation&lt;br&gt;2)Authorization and authentication&lt;br&gt;3)deduplication(at max once delivery policy)&lt;br&gt;4)SSL Termination&lt;br&gt;5)Server Side Encryption&lt;br&gt;6)Throttling(Rate Limiting)&lt;br&gt;7)Request dispatching (bulkhead and circuit breaker design pattern)&lt;br&gt;8) caching&lt;br&gt;9) User data creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="34" y="1444" width="397" height="198" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-22" value="Metadata Service&lt;br&gt;(provides data about which queue is stored in which cluster and other queue related data like creation date, name owner ,etc)&lt;br&gt;cache is maintained in memory" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-22" value="Metadata Service&lt;br&gt;(provides data about which queue is stored in which cluster and other queue related data like creation date, name owner ,etc)&lt;br&gt;cache is maintained in memory" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="93" y="1215" width="276" height="119" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-24" value="database" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-24" value="database" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="154" y="1120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.65;entryY=0.978;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="rq72XXHcKqSahEBaoDvN-22" target="rq72XXHcKqSahEBaoDvN-24">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.65;entryY=0.978;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="rq72XXHcKqSahEBaoDvN-22" target="rq72XXHcKqSahEBaoDvN-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-26" value="Backend Service&lt;br&gt;(this is where the data will be stored)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-26" value="Backend Service&lt;br&gt;(this is where the data will be stored)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="411" y="1371" width="272" height="57" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-28" value="many reads less writes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-28" value="many reads less writes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="388" y="1193" width="120" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-29" value="there can be three ways of creating the cache cluster:-&lt;br&gt;1) if the data is less then multiple machines can be created in the cluester which store the exact same data. frontend service can then call any one of the machines in the cluster&lt;br&gt;2) if the dtata is big then we can think of sharding the data mong different machines and can use consistent hashing for the purpose.frontend service can call the requireed instance based on the hash created&lt;br&gt;3) we can have the sharding but this time the hashing and instance determination can happen at each instance.level . the frontend service can send the data to any one of the instences and the instance can send the data to the right instance&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-29" value="there can be three ways of creating the cache cluster:-&lt;br&gt;1) if the data is less then multiple machines can be created in the cluester which store the exact same data. frontend service can then call any one of the machines in the cluster&lt;br&gt;2) if the dtata is big then we can think of sharding the data mong different machines and can use consistent hashing for the purpose.frontend service can call the requireed instance based on the hash created&lt;br&gt;3) we can have the sharding but this time the hashing and instance determination can happen at each instance.level . the frontend service can send the data to any one of the instences and the instance can send the data to the right instance&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="397" y="1240" width="1424" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-30" value="there would be mulitiple instances of the load balancers , vips and the front end service ...each at a different data center to ensure availablity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-30" value="there would be mulitiple instances of the load balancers , vips and the front end service ...each at a different data center to ensure availablity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-204" y="1472" width="263" height="109" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-31" value="db vs cache vs in memory store in distributed machines:-&lt;br&gt;in order to handle very large traffic of data wherein the data is consumed from one end and it is written into one end and the direction of write is only one, we could store the data in host disks (using file system for old messages) and in their memory as well (for recent messages ). this will help us scale while maintaining low latency.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-31" value="db vs cache vs in memory store in distributed machines:-&lt;br&gt;in order to handle very large traffic of data wherein the data is consumed from one end and it is written into one end and the direction of write is only one, we could store the data in host disks (using file system for old messages) and in their memory as well (for recent messages ). this will help us scale while maintaining low latency.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="543" y="1516" width="719" height="23" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-32" value="we will have several leaders and followers . each follower will in sync read from the leader.&lt;br&gt;we would require a service that would maintain the list of leader (corresponding queues) and their followers. it will work similar to a zoo keeper. for each queue there will be an offset for a consumer which will denote the message read by the customer . we will remove the offset values periodically from the queues. there are two types of zoo keppers based on the type of cluster management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-32" value="we will have several leaders and followers . each follower will in sync read from the leader.&lt;br&gt;we would require a service that would maintain the list of leader (corresponding queues) and their followers. it will work similar to a zoo keeper. for each queue there will be an offset for a consumer which will denote the message read by the customer . we will remove the offset values periodically from the queues. there are two types of zoo keppers based on the type of cluster management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="545" y="1643" width="622" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-33" value="In cluster manager\ zookeeper&lt;br&gt;1) all the hosts are in a single cluster&amp;nbsp;&lt;br&gt;2) leaders and followers are assigned to hosts in the cluster&lt;br&gt;3) here the zoo keeper has to maintain the list of each host and its data for targeted data routing.&lt;br&gt;4) health check for each host.&lt;br&gt;5) leader election if any of the host dies or queue leader division for scalability(partitioning)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-33" value="In cluster manager\ zookeeper&lt;br&gt;1) all the hosts are in a single cluster&amp;nbsp;&lt;br&gt;2) leaders and followers are assigned to hosts in the cluster&lt;br&gt;3) here the zoo keeper has to maintain the list of each host and its data for targeted data routing.&lt;br&gt;4) health check for each host.&lt;br&gt;5) leader election if any of the host dies or queue leader division for scalability(partitioning)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="422" y="1849" width="312" height="194" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-34" value="Out cluster manager\ zookeeper&lt;br&gt;1) several clusters each with 2 to 3 hosts&lt;br&gt;2) no leaders and data replication happens throughout the cluster from any node&lt;br&gt;3) here the zoo keeper has to maintain the list of each cluster and its data for targeted data routing. the hosts will share the data among themselves&lt;br&gt;4) health check for each cluster or overheated cluster&lt;br&gt;5)&amp;nbsp; queue is assigned to multiple clusters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-34" value="Out cluster manager\ zookeeper&lt;br&gt;1) several clusters each with 2 to 3 hosts&lt;br&gt;2) no leaders and data replication happens throughout the cluster from any node&lt;br&gt;3) here the zoo keeper has to maintain the list of each cluster and its data for targeted data routing. the hosts will share the data among themselves&lt;br&gt;4) health check for each cluster or overheated cluster&lt;br&gt;5)&amp;nbsp; queue is assigned to multiple clusters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="812" y="1840" width="312" height="194" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-35" value="other Important Points:-&lt;br&gt;1) Queue creation and deletion:- queue can be created via API and deleted via api but delete api needs to be protected from unintended use(like not make it available on GUI and only via console)&lt;br&gt;2) Message deletion :- messages can be stored with offset and can be cleared in regular intervals(implemented in kafka)&lt;br&gt;messages are stored with offset but deleting the messages has to be done by consumers explicitly else the messages will be shown again (amazon sqs)&lt;br&gt;3) replication:- synchronous replication - producer is responded after the data is replicated -&lt;br&gt;more available but slow&lt;br&gt;asynchronous replication:- replication happens after response - fast but not durable&lt;br&gt;4) push vs pull :- in Pull the consumer / backend regularly polls the message queue for new messages whereas in push the queue send update to the consumer when a new message comes. pull is simpler to implement for message queue but is more work from the consumer side.&lt;br&gt;5) message delivery semantics :- atleast once / atmost once /exactly once.&lt;br&gt;we need the3 other two because exactly once is very difficult to achieve . most of the distrbuted queues implement atleast once as it gives balance of availablity and performance.&lt;br&gt;6) FIFO -100% is not possible in distributed queues. else latency will be affected.&lt;br&gt;6)security:- ssl / http encryption and server side encryption&lt;br&gt;7) monitoring :- alert / dashboard for all services and provide info to consumers about their specific queues&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-35" value="other Important Points:-&lt;br&gt;1) Queue creation and deletion:- queue can be created via API and deleted via api but delete api needs to be protected from unintended use(like not make it available on GUI and only via console)&lt;br&gt;2) Message deletion :- messages can be stored with offset and can be cleared in regular intervals(implemented in kafka)&lt;br&gt;messages are stored with offset but deleting the messages has to be done by consumers explicitly else the messages will be shown again (amazon sqs)&lt;br&gt;3) replication:- synchronous replication - producer is responded after the data is replicated -&lt;br&gt;more available but slow&lt;br&gt;asynchronous replication:- replication happens after response - fast but not durable&lt;br&gt;4) push vs pull :- in Pull the consumer / backend regularly polls the message queue for new messages whereas in push the queue send update to the consumer when a new message comes. pull is simpler to implement for message queue but is more work from the consumer side.&lt;br&gt;5) message delivery semantics :- atleast once / atmost once /exactly once.&lt;br&gt;we need the3 other two because exactly once is very difficult to achieve . most of the distrbuted queues implement atleast once as it gives balance of availablity and performance.&lt;br&gt;6) FIFO -100% is not possible in distributed queues. else latency will be affected.&lt;br&gt;6)security:- ssl / http encryption and server side encryption&lt;br&gt;7) monitoring :- alert / dashboard for all services and provide info to consumers about their specific queues&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="85" y="2212" width="713" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-36" value="Source - system Design Interview /&lt;br&gt;exponent youtube channel" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-36" value="Source - system Design Interview /&lt;br&gt;exponent youtube channel" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="138" y="-294" width="620" height="117" as="geometry" />
         </mxCell>
-        <mxCell id="rq72XXHcKqSahEBaoDvN-37" value="VIP partitioning&amp;nbsp;&lt;br&gt;and LB replication help achieve scalability and availability at load balancer layer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="rq72XXHcKqSahEBaoDvN-37" value="VIP partitioning&amp;nbsp;&lt;br&gt;and LB replication help achieve scalability and availability at load balancer layer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-178" y="1591" width="196" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="r8Y20t246yiiUhSQcGlu-1" value="Vip - virtual ip addresses and virtual mac addresses are adopted by the&lt;div&gt;&amp;nbsp;master load balancer and&amp;nbsp; master&amp;nbsp;&lt;div&gt;and the backup lb servers communicate via heart beats ,&amp;nbsp;&lt;/div&gt;&lt;div&gt;if master fails the back up takes up the vip and infroms the closest switch&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-381" y="1261" width="408" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="Ec-sdZ_nJDhUrjcP1xZ5" name="Distriibuted Cache">
-    <mxGraphModel dx="1201" dy="454" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1354" dy="556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-9" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="5JbDHmml3U0eQqSb9q6q-6">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-9" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="5JbDHmml3U0eQqSb9q6q-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="844.5" y="809" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="5JbDHmml3U0eQqSb9q6q-6" target="5JbDHmml3U0eQqSb9q6q-11">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="5JbDHmml3U0eQqSb9q6q-6" target="5JbDHmml3U0eQqSb9q6q-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="871" y="769" />
@@ -135,43 +138,43 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-6" value="Service A&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-6" value="Service A&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="751" y="540" width="187" height="149" as="geometry" />
         </mxCell>
-        <mxCell id="Y8MxdgkQL78X8ubVRlcU-1" value="Distributed Cache&lt;br&gt;Functional Requirements:-&lt;br&gt;1) write&amp;nbsp;&lt;br&gt;2) read&amp;nbsp;&lt;br&gt;Non Functional Requirements:-&lt;br&gt;1) Scalability&lt;br&gt;2) low latency&lt;br&gt;3) High availability&lt;br&gt;4) Durability" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Y8MxdgkQL78X8ubVRlcU-1" value="Distributed Cache&lt;br&gt;Functional Requirements:-&lt;br&gt;1) write&amp;nbsp;&lt;br&gt;2) read&amp;nbsp;&lt;br&gt;Non Functional Requirements:-&lt;br&gt;1) Scalability&lt;br&gt;2) low latency&lt;br&gt;3) High availability&lt;br&gt;4) Durability" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-52" y="19" width="286" height="227" as="geometry" />
         </mxCell>
-        <mxCell id="Y8MxdgkQL78X8ubVRlcU-2" value="cache eviction policies:-&lt;br&gt;1)LRU (doubly linked list and a hash table)&lt;br&gt;2)FIFO&lt;br&gt;3)LFU" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Y8MxdgkQL78X8ubVRlcU-2" value="cache eviction policies:-&lt;br&gt;1)LRU (doubly linked list and a hash table)&lt;br&gt;2)FIFO&lt;br&gt;3)LFU" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="412" y="23" width="201" height="126" as="geometry" />
         </mxCell>
-        <mxCell id="Y8MxdgkQL78X8ubVRlcU-3" value="Types of cache:-&lt;br&gt;1) write through cache&amp;nbsp;&lt;br&gt;2) write back into the cache&amp;nbsp;&lt;br&gt;3) write around cache" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Y8MxdgkQL78X8ubVRlcU-3" value="Types of cache:-&lt;br&gt;1) write through cache&amp;nbsp;&lt;br&gt;2) write back into the cache&amp;nbsp;&lt;br&gt;3) write around cache" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="646" y="23" width="189" height="123" as="geometry" />
         </mxCell>
-        <mxCell id="Y8MxdgkQL78X8ubVRlcU-4" value="for making the cache available we can use the concept of replication using master slave architecture." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Y8MxdgkQL78X8ubVRlcU-4" value="for making the cache available we can use the concept of replication using master slave architecture." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="429" y="242" width="199" height="104" as="geometry" />
         </mxCell>
-        <mxCell id="Y8MxdgkQL78X8ubVRlcU-5" value="for making the cache more scalable we can use consistent hashing (why?? with mod of hashing , it is difficult to maintain when the number of hosts change)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Y8MxdgkQL78X8ubVRlcU-5" value="for making the cache more scalable we can use consistent hashing (why?? with mod of hashing , it is difficult to maintain when the number of hosts change)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="670" y="242" width="266" height="127" as="geometry" />
         </mxCell>
-        <mxCell id="Y8MxdgkQL78X8ubVRlcU-18" value="replicas try to replicate the leader or master. put happens on master but get can be done from both leaders and followers.the master election and failover can be handled by the configuration/zookeeper service. configuration service is distributed service.(eg redis sentinel)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Y8MxdgkQL78X8ubVRlcU-18" value="replicas try to replicate the leader or master. put happens on master but get can be done from both leaders and followers.the master election and failover can be handled by the configuration/zookeeper service. configuration service is distributed service.(eg redis sentinel)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1211" y="1256" width="490" height="77" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-1" value="1)domino host failure problem with consistent hashing&lt;br&gt;2) Data Expiry :- Time To Live to prevent stale data&lt;br&gt;and randomly the entries would be checked to remove the expired TTL entries. passive expiration (check for expiry whenever a client requests for the key) or active expiry (actively look out for expired entries and remove them randomly as checking for every key will be costly)&lt;br&gt;3) maintaining local cache:- while using the dedicated cache cluster the services can also have their own local caches which will be maintained by the cache client itself.&lt;br&gt;4) the cache client has to do a lot of works- monitoring ,logging, hashing , host finding ,etc. the host finding can be handled by a proxy or by the cache cluster servers themselves.&lt;br&gt;5) for some time there might be cache misses due to the inconsistencies in different front end services lists (also due to async replies from master slave cache shards). we can get betterf consistency by affecting availability by doing everything in sync fashion.&lt;br&gt;6)security - security is quite imp so we need to ensure that the cache system always sits behind a firewall and proper authentication systems are in place. the services using cache are generally internal services . there could be data encryption before sending data to the cache but that can lead to low latency.&amp;nbsp;&lt;br&gt;7) Monitoring is also another important aspect - cpu through put / data latency/ memory utilisation/disk utilisation. alerts can be sent as well. for logging we can log info about which service availed cache service when and for what data.&lt;br&gt;8) another problem of consistent hashing is the uneven distribution among the servers . jump consistent hashing is an improvement over normal consistent hashing which is in a paper published by google. proportional hashing is used by yahoo." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-1" value="1)domino host failure problem with consistent hashing&lt;br&gt;2) Data Expiry :- Time To Live to prevent stale data&lt;br&gt;and randomly the entries would be checked to remove the expired TTL entries. passive expiration (check for expiry whenever a client requests for the key) or active expiry (actively look out for expired entries and remove them randomly as checking for every key will be costly)&lt;br&gt;3) maintaining local cache:- while using the dedicated cache cluster the services can also have their own local caches which will be maintained by the cache client itself.&lt;br&gt;4) the cache client has to do a lot of works- monitoring ,logging, hashing , host finding ,etc. the host finding can be handled by a proxy or by the cache cluster servers themselves.&lt;br&gt;5) for some time there might be cache misses due to the inconsistencies in different front end services lists (also due to async replies from master slave cache shards). we can get betterf consistency by affecting availability by doing everything in sync fashion.&lt;br&gt;6)security - security is quite imp so we need to ensure that the cache system always sits behind a firewall and proper authentication systems are in place. the services using cache are generally internal services . there could be data encryption before sending data to the cache but that can lead to low latency.&amp;nbsp;&lt;br&gt;7) Monitoring is also another important aspect - cpu through put / data latency/ memory utilisation/disk utilisation. alerts can be sent as well. for logging we can log info about which service availed cache service when and for what data.&lt;br&gt;8) another problem of consistent hashing is the uneven distribution among the servers . jump consistent hashing is an improvement over normal consistent hashing which is in a paper published by google. proportional hashing is used by yahoo." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-132" y="1080" width="348" height="815" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-2" value="here the&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-2" value="here the&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="465" y="484" width="137" height="167" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-3" value="We use hash table to store entries in the cache. however if the size of the hash table is not large enough to store all the data. here we need to think about data eviction policies like LRU&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-3" value="We use hash table to store entries in the cache. however if the size of the hash table is not large enough to store all the data. here we need to think about data eviction policies like LRU&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="151" y="275" width="136" height="238" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-4" value="Another thing to decide is whether to have both the caches and services in the same host (one scales with another leading to less maintenance over head) or in different hosts (can scale independently).&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-4" value="Another thing to decide is whether to have both the caches and services in the same host (one scales with another leading to less maintenance over head) or in different hosts (can scale independently).&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="360" y="373" width="485" height="93" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-5" value="cache client&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-5" value="cache client&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="804" y="618" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="5JbDHmml3U0eQqSb9q6q-7">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="5JbDHmml3U0eQqSb9q6q-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="860" y="810.3333333333333" as="targetPoint" />
             <Array as="points">
@@ -180,313 +183,313 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-7" value="Service B" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-7" value="Service B" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="964" y="542" width="187" height="149" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-8" value="cache client&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-8" value="cache client&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1017" y="620" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-17" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="5JbDHmml3U0eQqSb9q6q-10" target="5JbDHmml3U0eQqSb9q6q-16">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-17" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="5JbDHmml3U0eQqSb9q6q-10" target="5JbDHmml3U0eQqSb9q6q-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-10" value="Cache A&lt;br&gt;A-M" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-10" value="Cache A&lt;br&gt;A-M" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="787" y="815" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-11" value="Cache B&lt;br&gt;N-Z" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-11" value="Cache B&lt;br&gt;N-Z" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="973" y="822" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.592;entryY=-0.039;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="5JbDHmml3U0eQqSb9q6q-7" target="5JbDHmml3U0eQqSb9q6q-11">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.592;entryY=-0.039;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="5JbDHmml3U0eQqSb9q6q-7" target="5JbDHmml3U0eQqSb9q6q-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-16" value="Read Replica" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-16" value="Read Replica" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="696" y="934" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" target="5JbDHmml3U0eQqSb9q6q-19">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-18" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" target="5JbDHmml3U0eQqSb9q6q-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1019" y="882" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-19" value="Read Replica" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-19" value="Read Replica" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="891" y="941" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-20" value="think of synchronous vs asynchronous replication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-20" value="think of synchronous vs asynchronous replication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="799" y="1012" width="151" height="87" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-21" value="the set up where the cache is maintain in the service hosts is called co-located cache .wheras the alternative is called dedicated cache cluster." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-21" value="the set up where the cache is maintain in the service hosts is called co-located cache .wheras the alternative is called dedicated cache cluster." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="878" y="383" width="485" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-22" value="colocated cache&amp;nbsp;&lt;br&gt;&lt;br&gt;The service and the cache can scale together&lt;br&gt;&lt;br&gt;no setup cost for separate hardware" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-22" value="colocated cache&amp;nbsp;&lt;br&gt;&lt;br&gt;The service and the cache can scale together&lt;br&gt;&lt;br&gt;no setup cost for separate hardware" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1162" y="501" width="209" height="111" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-23" value="Dedicated cluster&lt;br&gt;&lt;br&gt;isolation of resources b/w service and cache&lt;br&gt;&lt;br&gt;cache can be used by multiple services&lt;br&gt;&lt;br&gt;high flexibility in choosing the hardware" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-23" value="Dedicated cluster&lt;br&gt;&lt;br&gt;isolation of resources b/w service and cache&lt;br&gt;&lt;br&gt;cache can be used by multiple services&lt;br&gt;&lt;br&gt;high flexibility in choosing the hardware" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1428" y="486" width="332" height="146" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-24" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-24" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1408" y="650" as="sourcePoint" />
             <mxPoint x="1405" y="497" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-25" value="in consistent hashing we have a circle . we put 0 at an arbitrary point on the circle. we calculate hash of each server and locate the host on the cluster. all the keys are stored in the first host that is met while travelling clockwise from the hash value point of the key on the circle. In this whenever a new host is added only one existing host is affected leading to much lesser cache misses then the hash mod host allocator." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-25" value="in consistent hashing we have a circle . we put 0 at an arbitrary point on the circle. we calculate hash of each server and locate the host on the cluster. all the keys are stored in the first host that is met while travelling clockwise from the hash value point of the key on the circle. In this whenever a new host is added only one existing host is affected leading to much lesser cache misses then the hash mod host allocator." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1045" y="240" width="546" height="129" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-26" value="the cache client stores the list of host in sorted order of their hash values.&lt;br&gt;&lt;br&gt;whenever a key arrives the responsible cache cluster is found by using binary search&lt;br&gt;&lt;br&gt;if a cache is down client assumes it to be a cache miss.&lt;br&gt;&lt;br&gt;it can use either tcp or udp to communicate&lt;br&gt;&lt;br&gt;all clients should have the same list of servers" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-26" value="the cache client stores the list of host in sorted order of their hash values.&lt;br&gt;&lt;br&gt;whenever a key arrives the responsible cache cluster is found by using binary search&lt;br&gt;&lt;br&gt;if a cache is down client assumes it to be a cache miss.&lt;br&gt;&lt;br&gt;it can use either tcp or udp to communicate&lt;br&gt;&lt;br&gt;all clients should have the same list of servers" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1174" y="678" width="447" height="249" as="geometry" />
         </mxCell>
-        <mxCell id="5JbDHmml3U0eQqSb9q6q-27" value="with LRU and sharding we still have problems with availability and hot shards problem. the hot shard problem cannot be solved by adding new host to the consistent hashing circle as we cannot put it to reduce load on the hot shard host specifically. a solution to both these problems is using data replication.&lt;br&gt;there are two types of replication protocols - probabilistic (gossip)&lt;br&gt;and consensus (2 and 3 phase commits).&lt;br&gt;we will use master slave replication here" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="5JbDHmml3U0eQqSb9q6q-27" value="with LRU and sharding we still have problems with availability and hot shards problem. the hot shard problem cannot be solved by adding new host to the consistent hashing circle as we cannot put it to reduce load on the hot shard host specifically. a solution to both these problems is using data replication.&lt;br&gt;there are two types of replication protocols - probabilistic (gossip)&lt;br&gt;and consensus (2 and 3 phase commits).&lt;br&gt;we will use master slave replication here" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1144" y="1099" width="693" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Xe0Kr-57QhkMd-WKNgwq-1" target="Xe0Kr-57QhkMd-WKNgwq-2">
+        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="Xe0Kr-57QhkMd-WKNgwq-1" target="Xe0Kr-57QhkMd-WKNgwq-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-1" value="service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-1" value="service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-210" y="610" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Xe0Kr-57QhkMd-WKNgwq-2" target="Xe0Kr-57QhkMd-WKNgwq-4">
+        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="Xe0Kr-57QhkMd-WKNgwq-2" target="Xe0Kr-57QhkMd-WKNgwq-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-2" value="cache" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-2" value="cache" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="14" y="607" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-4" value="db" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-4" value="db" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="254" y="607" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-6" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;the list of servers can be the most important factor to enter cache requests and to retrieve messages. the list of servers can be maintained by using a shared file , updating file on each system or by using a separate service for updating the list automatically . the list needs to be updated each time a server gets added or removed.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;the zookeeper like service keeps track of the heartbeat signals for finding server list updates.&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="Xe0Kr-57QhkMd-WKNgwq-6" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;the list of servers can be the most important factor to enter cache requests and to retrieve messages. the list of servers can be maintained by using a shared file , updating file on each system or by using a separate service for updating the list automatically . the list needs to be updated each time a server gets added or removed.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;the zookeeper like service keeps track of the heartbeat signals for finding server list updates.&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1155" y="943" width="661" height="156" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="-GS4Oidd2o930p5_4_Wq" name="Distributed Notification Service">
-    <mxGraphModel dx="1913" dy="858" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1354" dy="556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BjiJZAfVakd709UzBsyo-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="BjiJZAfVakd709UzBsyo-2" target="BjiJZAfVakd709UzBsyo-5">
+        <mxCell id="BjiJZAfVakd709UzBsyo-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="BjiJZAfVakd709UzBsyo-2" target="BjiJZAfVakd709UzBsyo-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-74" y="605" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-2" value="LB" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="BjiJZAfVakd709UzBsyo-2" value="LB" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-274" y="575" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="BjiJZAfVakd709UzBsyo-5" target="BjiJZAfVakd709UzBsyo-8">
+        <mxCell id="BjiJZAfVakd709UzBsyo-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="BjiJZAfVakd709UzBsyo-5" target="BjiJZAfVakd709UzBsyo-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="BjiJZAfVakd709UzBsyo-5" target="BjiJZAfVakd709UzBsyo-10">
+        <mxCell id="BjiJZAfVakd709UzBsyo-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="BjiJZAfVakd709UzBsyo-5" target="BjiJZAfVakd709UzBsyo-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-5" value="Frontend service&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="BjiJZAfVakd709UzBsyo-5" value="Frontend service&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-121" y="575" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-6" value="Tasks:-&lt;br&gt;1)Request Validation&lt;br&gt;2) Authorisation and authentication&lt;br&gt;3)SSL Termination&lt;br&gt;4) Server Side encryption&lt;br&gt;5)Throttling&lt;br&gt;6) logging&lt;br&gt;7) Monitoring&lt;br&gt;8) request deduplication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="BjiJZAfVakd709UzBsyo-6" value="Tasks:-&lt;br&gt;1)Request Validation&lt;br&gt;2) Authorisation and authentication&lt;br&gt;3)SSL Termination&lt;br&gt;4) Server Side encryption&lt;br&gt;5)Throttling&lt;br&gt;6) logging&lt;br&gt;7) Monitoring&lt;br&gt;8) request deduplication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-197" y="653" width="291" height="162" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="BjiJZAfVakd709UzBsyo-8" target="BjiJZAfVakd709UzBsyo-9">
+        <mxCell id="BjiJZAfVakd709UzBsyo-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="BjiJZAfVakd709UzBsyo-8" target="BjiJZAfVakd709UzBsyo-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-62" y="424" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-8" value="Metadata Service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="BjiJZAfVakd709UzBsyo-8" value="Metadata Service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-124" y="470" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-9" value="Database" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="BjiJZAfVakd709UzBsyo-9" value="Database" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-124" y="378" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BjiJZAfVakd709UzBsyo-10" value="Backend Service&lt;br&gt;(several hosts on a cluster with memory)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="BjiJZAfVakd709UzBsyo-10" value="Backend Service&lt;br&gt;(several hosts on a cluster with memory)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="86" y="569.5" width="181" height="71" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="97-E9wYAB6b1pNFDQS3e" name="Rate Limiting Service">
-    <mxGraphModel dx="1651" dy="483" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1754" dy="556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-342" y="561" width="333" height="545" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-51" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-39" target="mM6ZTAhmVn71T6JqEzrE-37">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-51" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-39" target="mM6ZTAhmVn71T6JqEzrE-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="3" y="927" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-328" y="608" width="284" height="251" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-1" value="Rate Limiter&amp;nbsp;&lt;br&gt;Functional Requirements:-&lt;br&gt;isAllowed(request)&lt;br&gt;&lt;br&gt;Non Functional Requirement :-&lt;br&gt;1) scalability&#39;&lt;br&gt;2) accurate&lt;br&gt;3) performant" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-1" value="Rate Limiter&amp;nbsp;&lt;br&gt;Functional Requirements:-&lt;br&gt;isAllowed(request)&lt;br&gt;&lt;br&gt;Non Functional Requirement :-&lt;br&gt;1) scalability&#39;&lt;br&gt;2) accurate&lt;br&gt;3) performant" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-19" y="44" width="302" height="176" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-2" target="mM6ZTAhmVn71T6JqEzrE-5">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-2" target="mM6ZTAhmVn71T6JqEzrE-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-2" value="rate Limiter" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-2" value="rate Limiter" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="110" y="303" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-3" target="mM6ZTAhmVn71T6JqEzrE-2">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-3" target="mM6ZTAhmVn71T6JqEzrE-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-3" value="load balancer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-3" value="load balancer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-109" y="303" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-5" value="service" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-5" value="service" style="whiteSpace=wrap;html=1;fontSize=16;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="312" y="301" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-7" value="1) token bucket algorithm&lt;br&gt;2) sliding window algorithm&lt;br&gt;3) Modified sliding window algo&lt;br&gt;4) counter/ token based&lt;br&gt;5) queue based&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-7" value="1) token bucket algorithm&lt;br&gt;2) sliding window algorithm&lt;br&gt;3) Modified sliding window algo&lt;br&gt;4) counter/ token based&lt;br&gt;5) queue based&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="100" y="408" width="221" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-8" value="when needed to scale we might face some problems :-&lt;br&gt;when there are more than one host dedicated for rate limiting then there needs to be communication between them for sharing the info about the requests that have already been handled. for keeping the system highly available there might be some lower throttling due to intermediate inconsistencies but that is manageable. also when more requests are processed than allowed then e can modify the token bucket algo to allow negative values as well.&lt;br&gt;so in the subsequent seconds with replenishment also the requests may not be processed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-8" value="when needed to scale we might face some problems :-&lt;br&gt;when there are more than one host dedicated for rate limiting then there needs to be communication between them for sharing the info about the requests that have already been handled. for keeping the system highly available there might be some lower throttling due to intermediate inconsistencies but that is manageable. also when more requests are processed than allowed then e can modify the token bucket algo to allow negative values as well.&lt;br&gt;so in the subsequent seconds with replenishment also the requests may not be processed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="14" y="564" width="374" height="274" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-9" value="leaky bucket - just increment counter by 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-9" value="leaky bucket - just increment counter by 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="394" y="424" width="113" height="77" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-10" value="questions :-&lt;br&gt;why not horizontal scaling:- horizontal scaling takes time&amp;nbsp;&lt;br&gt;why not Load balancer? Load balancer cannot distinguish between different types of requests it can only throttle on the total no of requests." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-10" value="questions :-&lt;br&gt;why not horizontal scaling:- horizontal scaling takes time&amp;nbsp;&lt;br&gt;why not Load balancer? Load balancer cannot distinguish between different types of requests it can only throttle on the total no of requests." style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="314" y="64" width="281" height="131" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-11" value="problem that we are solving :- noisy neighbour problem" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-11" value="problem that we are solving :- noisy neighbour problem" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-218" y="90" width="151" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-12" value="maintaining throttling on individual hosts would have been fine if the load balancer could distribute requests evenly but in real world load balancers cannot throttle requests evenly. this is because they dont know about the type of request that they are sending." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-12" value="maintaining throttling on individual hosts would have been fine if the load balancer could distribute requests evenly but in real world load balancers cannot throttle requests evenly. this is because they dont know about the type of request that they are sending." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="400" y="647" width="286" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="787" y="323" width="428" height="406" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-14" value="service host" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-14" value="service host" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="827" y="340" width="103" height="31" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-15" value="rate limiting rules db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-15" value="rate limiting rules db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1454" y="331" width="86" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-16" value="rules&lt;br&gt;service" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-16" value="rules&lt;br&gt;service" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1305" y="348" width="85" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-16" target="mM6ZTAhmVn71T6JqEzrE-15">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-16" target="mM6ZTAhmVn71T6JqEzrE-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-18" target="mM6ZTAhmVn71T6JqEzrE-16">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-18" target="mM6ZTAhmVn71T6JqEzrE-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-18" value="rules retriever" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-18" value="rules retriever" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1068" y="361" width="103" height="88" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-20" target="mM6ZTAhmVn71T6JqEzrE-18">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-20" target="mM6ZTAhmVn71T6JqEzrE-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-20" value="rules cache" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-20" value="rules cache" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="919" y="389" width="99" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-22" target="mM6ZTAhmVn71T6JqEzrE-23">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-22" target="mM6ZTAhmVn71T6JqEzrE-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-22" value="host identifier" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-22" value="host identifier" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="804" y="537" width="115" height="91" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-23" target="mM6ZTAhmVn71T6JqEzrE-26">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-23" target="mM6ZTAhmVn71T6JqEzrE-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-29" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-23" target="mM6ZTAhmVn71T6JqEzrE-28">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-29" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-23" target="mM6ZTAhmVn71T6JqEzrE-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-23" value="rate limiter" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-23" value="rate limiter" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="965" y="533" width="103" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.597;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-20" target="mM6ZTAhmVn71T6JqEzrE-23">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.597;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-20" target="mM6ZTAhmVn71T6JqEzrE-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-26" value="request processor&lt;br&gt;(if request allowed)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=1;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-26" value="request processor&lt;br&gt;(if request allowed)" style="whiteSpace=wrap;html=1;fontSize=16;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="1102" y="533" width="103" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-28" value="1) error failure code is sent to the client&amp;nbsp;&lt;br&gt;2) request is sent to the queue for future&amp;nbsp;&lt;br&gt;3) request is dropped" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-28" value="1) error failure code is sent to the client&amp;nbsp;&lt;br&gt;2) request is sent to the queue for future&amp;nbsp;&lt;br&gt;3) request is dropped" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="982" y="880" width="206" height="101" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-30" value="if not allowed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-30" value="if not allowed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1064" y="761" width="95" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-31" value="token bucket algo- each bucket has fixed max no of tokens&lt;br&gt;current no of tokens available&amp;nbsp;&lt;br&gt;token replenishment rate or the rate at which tokens are replenished" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-31" value="token bucket algo- each bucket has fixed max no of tokens&lt;br&gt;current no of tokens available&amp;nbsp;&lt;br&gt;token replenishment rate or the rate at which tokens are replenished" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-270" y="433" width="275" height="104" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-50" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=-0.004;exitY=0.816;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-32" target="mM6ZTAhmVn71T6JqEzrE-38">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-50" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=-0.004;exitY=0.816;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-32" target="mM6ZTAhmVn71T6JqEzrE-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-407" y="968" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-32" value="Token Bucket Rate Limiter:-&lt;br&gt;makTokens;&lt;br&gt;currentTokens;&lt;br&gt;replenishmentRate;&lt;br&gt;clientID;&lt;br&gt;lastRefillTimestamp;&lt;br&gt;&lt;br&gt;allowRequest(int);&lt;br&gt;replenishTokens();" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-32" value="Token Bucket Rate Limiter:-&lt;br&gt;makTokens;&lt;br&gt;currentTokens;&lt;br&gt;replenishmentRate;&lt;br&gt;clientID;&lt;br&gt;lastRefillTimestamp;&lt;br&gt;&lt;br&gt;allowRequest(int);&lt;br&gt;replenishTokens();" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-305" y="657" width="238" height="193" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-35" value="LLD" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-35" value="LLD" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-308" y="581" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-42" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-36" target="mM6ZTAhmVn71T6JqEzrE-41">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-42" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-36" target="mM6ZTAhmVn71T6JqEzrE-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-36" value="Rule Retriever Job Scheduler" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-36" value="Rule Retriever Job Scheduler" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-325" y="868" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-37" value="Token Bucket Cache" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-37" value="Token Bucket Cache" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-245" y="946" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-38" value="Client Identification Builder&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-38" value="Client Identification Builder&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-245" y="1022" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-40" value="Rate Limiter" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-40" value="Rate Limiter" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-311" y="619" width="158" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-43" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-41" target="mM6ZTAhmVn71T6JqEzrE-37">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-43" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-41" target="mM6ZTAhmVn71T6JqEzrE-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-48" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-41" target="mM6ZTAhmVn71T6JqEzrE-47">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-48" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-41" target="mM6ZTAhmVn71T6JqEzrE-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-41" value="Rules Retriever Task" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-41" value="Rules Retriever Task" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-178" y="868" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-44" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-44" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-411" y="757" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-47" value="Rules Service" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-47" value="Rules Service" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="49" y="859" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-49" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-44" target="mM6ZTAhmVn71T6JqEzrE-32">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-49" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-44" target="mM6ZTAhmVn71T6JqEzrE-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-52" value="types of distributed host communication:-&lt;br&gt;1)full mesh broadcasting&lt;br&gt;2)gossip protocol(random frequency selection of a peer and communication to the peer)&lt;br&gt;3)distributed cache:- all the hosts talk to a cache via which they communicate&lt;br&gt;4) coordination service:- it will ask for data from the hosts and send the data to the hosts&lt;br&gt;5)random leader selection :- randomly a leader is selected which will handle all the communication with the other hosts&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-52" value="types of distributed host communication:-&lt;br&gt;1)full mesh broadcasting&lt;br&gt;2)gossip protocol(random frequency selection of a peer and communication to the peer)&lt;br&gt;3)distributed cache:- all the hosts talk to a cache via which they communicate&lt;br&gt;4) coordination service:- it will ask for data from the hosts and send the data to the hosts&lt;br&gt;5)random leader selection :- randomly a leader is selected which will handle all the communication with the other hosts&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="349" y="859" width="326" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-53" value="service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-53" value="service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-305" y="1340" width="287" height="218" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-54" value="rate limiter" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-54" value="rate limiter" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-215" y="1487" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-55" value="Service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-55" value="Service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="243" y="1344" width="382" height="218" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-58" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="mM6ZTAhmVn71T6JqEzrE-56" target="mM6ZTAhmVn71T6JqEzrE-57">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-58" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="mM6ZTAhmVn71T6JqEzrE-56" target="mM6ZTAhmVn71T6JqEzrE-57" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-56" value="rate limiter client" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-56" value="rate limiter client" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="397" y="1490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-57" value="rate limiter service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-57" value="rate limiter service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="400" y="1624" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-59" value="rate limiter is a library :-&lt;br&gt;&lt;br&gt;not slow due to RPC&lt;br&gt;&lt;br&gt;No failure because of network failures" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-59" value="rate limiter is a library :-&lt;br&gt;&lt;br&gt;not slow due to RPC&lt;br&gt;&lt;br&gt;No failure because of network failures" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-200" y="1760" width="223" height="137" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-60" value="rate limiter as a separate service:-&lt;br&gt;&lt;br&gt;programming language agnostic&lt;br&gt;&lt;br&gt;memory independence&amp;nbsp;&lt;br&gt;&lt;br&gt;easier to deal with service team paranoia" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-60" value="rate limiter as a separate service:-&lt;br&gt;&lt;br&gt;programming language agnostic&lt;br&gt;&lt;br&gt;memory independence&amp;nbsp;&lt;br&gt;&lt;br&gt;easier to deal with service team paranoia" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="257" y="1770" width="342" height="132" as="geometry" />
         </mxCell>
-        <mxCell id="mM6ZTAhmVn71T6JqEzrE-61" value="1) if there are no requests of a particular type , we remove the corresponding bucket from memory&lt;br&gt;2) in case of network or daemon failure we will assume that that host is independent and less requests will be throttled overall&lt;br&gt;3)rules CRUD service can be provided to clients to update their rules in db&lt;br&gt;4) synchronisation-&amp;nbsp; required in the token bucket algorithm . synchronisation might be required in token bucket cache as well.&lt;br&gt;5) with throttled requests retry can be done via exponential back off algorithm with offset&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="mM6ZTAhmVn71T6JqEzrE-61" value="1) if there are no requests of a particular type , we remove the corresponding bucket from memory&lt;br&gt;2) in case of network or daemon failure we will assume that that host is independent and less requests will be throttled overall&lt;br&gt;3)rules CRUD service can be provided to clients to update their rules in db&lt;br&gt;4) synchronisation-&amp;nbsp; required in the token bucket algorithm . synchronisation might be required in token bucket cache as well.&lt;br&gt;5) with throttled requests retry can be done via exponential back off algorithm with offset&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-50" y="2049" width="528" height="213" as="geometry" />
         </mxCell>
-        <mxCell id="N0tBJgiuvfEH-x8uGA5S-1" value="with 1000 hosts and 10000 buckets , udp with gossip on service host will work well but for higher scale than that we will require a dedicated cluster for throttling" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="N0tBJgiuvfEH-x8uGA5S-1" value="with 1000 hosts and 10000 buckets , udp with gossip on service host will work well but for higher scale than that we will require a dedicated cluster for throttling" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="553" y="2075" width="290" height="119" as="geometry" />
         </mxCell>
       </root>
